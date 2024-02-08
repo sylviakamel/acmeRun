@@ -1,0 +1,11 @@
+[#p5,reftext=P.5]
+=== (P.5) Required technology elements
+
+ifdef::env-draft[]
+TIP: _External systems, hardware and software, expected to be necessary for building the system. It lists external technology elements, such as program libraries and hardware devices, that the project is expected to require. Although the actual use of such products belongs to design and implementation rather than requirements, it is part of the requirements task to identify elements whose availability is critical to the success of the project — an important element of risk analysis (<<p6>>)._  <<BM22>>
+endif::[]
+
+* Compliance and integration with HRM APIs
+** HRM Data is highly personal and sensitive. API calls must be made via secure channels and resulting data must be encrypted before storage.
+* Compliance with device GPS API
+** GPS data can be used maliciously, as such data will not be cached, and will only ever be stored locally on device

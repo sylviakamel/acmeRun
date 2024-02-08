@@ -1,0 +1,12 @@
+[#p2,reftext=P.2]
+=== (P.2) Imposed technical choices
+
+ifdef::env-draft[]
+TIP: _Any a priori choices binding the project to specific tools, hardware, languages or other technical parameters. Not all technical choices in projects derive from a pure technical analysis; some result from company policies. While some project members may dislike non-strictly-technical decisions, they are a fact of project life and must be documented, in particular for the benefit of one of the quality factors for requirements: "requirements must be justified"._  <<BM22>>
+endif::[]
+
+- ACME Run will be developed on a mobile platform using React Native, Flutter or Swift. This is to ensure that ACME Run is compatible on both Android and iOS operating systems. The system will only be designed for mobile use to ensure portability and accessibility of workouts outdoors.
+
+- Back end of the application will use SQL and Django to handle user profiles, challenges, workout data, and managing API endpoints.
+
+- HRM data collection is conducted using APIs and bluetooth. Bluetooth will allow a user to connect their HRM directly to their device, and the APIs will handle data requests from the app's backend operations to the HRM device. 

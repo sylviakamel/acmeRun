@@ -1,0 +1,14 @@
+[#s6,reftext=S.6]
+=== (S.6) Verification and acceptance criteria
+
+ifdef::env-draft[]
+TIP: _Specification of the conditions under which an implementation will be deemed satisfactory. Here, "verification" as shorthand for what is more explicitly called "Verification & Validation" (V&V), covering several levels of testing — module testing, integration testing, system testing, user acceptance testing — as well as other techniques such as static analysis and, when applicable, program proving._  <<BM22>>
+endif::[]
+
+*Functional requirements* will be validated through a variety of acceptance tests. These tests will range in their scope, from individual unit tests, to end-to-end test describing full user journeys. Each end-to-end test will be decorated with a series of "checkpoints" where the current application state is verified against an expectation, as well as a final summary expectation to validate against. These expectations (checkpoints and final) will be composed across a variety of potential use cases. During early development stages these expectations will be defined through mockups, to be followed up by a series of alpha testing with real stakeholders' input.
+
+*For Non-functional requirements* 
+
+* *Compliance With Local Authorities*: Significant measures will be taken to continually operate within the regulations provided by local authorities. This will be continually monitored by a series of internal audits, as well as regular communication and feedback from local authority liasons.
+
+* *Compliance with Ontario Data Privacy Laws*: This will be tackled largely with the principle of least principle. Any user data collected will be kept to a strict minimum, and any systems which require user data will be limited to the minimum amount of data required. This will be included in application design from the ground up, and will be verified regularly with an internal auditing process.

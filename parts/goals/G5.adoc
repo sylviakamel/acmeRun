@@ -1,0 +1,44 @@
+[#g5,reftext=G.5]
+=== (G.5) High-level usage scenarios
+
+ifdef::env-draft[]
+TIP: _Fundamental usage paths through the system. It presents the main scenarios (use cases) that the system should cover. The scenarios chosen for appearing here, in the Goals book, should only be the **main usage patterns**, without details such as special and erroneous cases; they should be stated in user terms only, independently of the system's structure. Detailed usage scenarios, taking into account system details and special cases, will appear in the System book (<<s4>>)._  <<BM22>>
+endif::[]
+
+.High Level use cases diagram
+image::models/use_case_001.svg[scale=70%,align="center"]
+
+
+
+
+[[uc1,UC1]] *UC1: Start Running* 
+
+. Player opens the application and chooses the option to begin running
+. Player looks through a list of nearby trails to begin their run on
+. Based on estimated difficulty, trail location, and duration, the player selects a trail and begins running
+
+[[uc2,UC2]] *UC2: Virtual Enemy attack notification*
+
+. Player receives a notification through the app of a  "virtual enemy attack"
+. Player chooses to either run at a target speed for some duration of time, or to seek shelter
+. Upon making this decision and completing its expectation, player receives a notification that the attack has been thwarted
+
+[[uc3,UC3]] *UC3: Exercise history*
+
+. Player checks the stored log of their previous runs
+. Player compares trends over time, including average heart rate, average mile time, etc
+. Player is able to pin these metrics to their home page to improve upon them
+
+[[uc4,UC4]] *UC4: Check profile*
+
+. User opens their profile in the app
+. User validates/updates personal information (name,age,location)
+. User views badges earned from various exercise milestones
+
+[[uc5,UC5]] *UC5: Approve trail*
+
+. Trail authority submits their trail system for approved use
+. Trail authority defines the name of their trail, and geographic area covered by the trail
+. Trail authority submits any rules/regulations/notes for the trail
+. Trail authority uploads documentation to prove they are authorized to approve the trail
+

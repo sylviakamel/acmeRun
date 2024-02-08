@@ -1,0 +1,9 @@
+[#g1,reftext=G.1]
+=== (G.1) Context and Overall Objectives
+
+ifdef::env-draft[]
+TIP: _High-level view of the project: organizational context and reason for building a system. It explains why the project is needed, recalls the business context, and presents the general business objectives._  <<BM22>>
+endif::[]
+
+
+ACME Run is a fitness application that combines the functionality of an exercise tracker with a training plan application. It aims to address the rising costs of gym memberships. This mobile application integrates with GPS data and heart rate trackers. It not only tracks a user's workout but also actively optimizes their workout. It does this by utilizing historical data from the user to tailor their workout to their specific goals and weaknesses. Additionally, it provides motivation to help users stay engaged in their fitness routine. All of this is accomplished in an unobtrusive and entertaining manner, offering users a powerful and effective alternative to conventional gyms.

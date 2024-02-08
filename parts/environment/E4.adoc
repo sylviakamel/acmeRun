@@ -1,0 +1,15 @@
+[#e4,reftext=E.4]
+=== (E.4) Assumptions
+
+ifdef::env-draft[]
+TIP: _Properties of the environment that may be assumed, with the goal of facilitating the project and simplifying the system. It defines properties that are not imposed by the environment (like those in <<e3>>) but assumed to hold, as an explicit decision meant to facilitate the system's construction._  <<BM22>>
+endif::[]
+
+
+// * *Operating Systems* We assume that we will have to support both iOS and Android operating systems still supported by their manufacturers (iOS 15 and Android 11 onwards)
+
+// * *HRM Integrations* We assume that data integrations will be required for major brands (Garmin, Apple, and Google, at time of writing)
+
+* *Mobile Only* We assume that this application is only designed to run on mobile devices, and does not require a desktop version
+
+* *Network Connectivity* We assume that ACME Run users will have their device connected to wifi/ mobile data, and will have a GPS compatible device.

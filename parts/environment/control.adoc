@@ -1,0 +1,15 @@
+[discrete]
+=== Control Information
+
+.{project-title} -- Versionning Information -- Environment Book
+[cols="^2,^2,^2,^2,^2,^2"]
+|===
+|Section | Version | Lead | Delivered | Reviewer | Approved 
+
+| **<<e1>>** | Milestone #1 | RC, SM, SK | 15-10-2023 | SM | 15-10-2023 
+| **<<e2>>** | Milestone #2 | SK | 13-11-2023 | SM | 04-12-2023
+| **<<e3>>** | Milestone #2 | RC | 12-11-2023 | SK | 04-12-2023
+| **<<e4>>** | Milestone #2 | SM | 12-11-2023 | RC | 04-12-2023
+| **<<e5>>** | Milestone #1 | RC | 15-10-2023 | SK | 15-10-2023
+| **<<e6>>** | Milestone #1 | RC | 15-10-2023 | SK | 15-10-2023
+|===

@@ -1,0 +1,139 @@
+[#s4,reftext=S.4]
+=== (S.4) Detailed usage scenarios
+
+ifdef::env-draft[]
+TIP: _Examples of interaction between the environment (or human users) and the system, expressed as user stories. Such scenarios are not by themselves a substitute for precise descriptions of functionality (<<s3>>), but provide an important complement by specifying cases that these behavior descriptions must support; they also serve as a basis for developing test cases. The scenarios most relevant for stakeholders are given in chapter <<g5>> in the Goals book, at a general level, as use cases; in contrast, <<s4>> can refer to system components and functionality (from other chapters of the System book) as well as special and erroneous cases, and introduce more specific scenarios._  <<BM22>>
+endif::[]
+link:index.html[Docs]
+
+==== (S.4.1) Running with the Application
+*Use Case:* <<uc1>> +
+*Primary Actor:* App user  +
+*Precondition:*  User has internet access and the app downloaded. +
+*Trigger:* User wants to go for a run near or on campus. +
+*Main Success Scenario:* 
+
+. User Opens the ACME Run app.
+. User registers in a geographical zone.
+. User starts compatible heart rate monitor.
+. User selects trail.
+. User starts running.
+
+*Secondary Scenario*
+
+1. User Opens the ACME Run app.
+.. User creates new user account. +
+.. User logs into already existing account if not already logged in. 
+
+[start=3]
+. User starts compatible heart rate monitor.
+.. User does not own compatible heart rate monitor. +
+.. User does not start compatible HRM. +
+
+*Success Postcondition:*  User has completed an outdoor workout near or on campus. +
+This scenario is important as it demonstrates the core purpose of the app – providing affordable and accessible workout opportunities. We can expect some users to not own compatible heart rate monitors to aid in data collection, and some users may not even be registered on the app yet.
+
+.Activity diagram for 'Running with the application'
+image::models/s4_diagram.png[scale=75%,align="center"]
+This diagram breaks down the flow of a user's decisions when using the app. Rectangles represent the state of the application. Triangles represent decision.
+
+==== (S.4.2) Recieving Virtual Enemy Attack Notification
+*Use Case:* <<uc2>> +
+*Primary Actor:* App user  +
+*Precondition:*  User has internet access, the app downloaded, and the player is currently running in a trail. +
+*Trigger:* User is running a trail, and according to their player data, they are ready for a challenge. +
+*Main Success Scenario:* 
+
+. User recieves a notification of a 'virtual enemy attack'.
+. User looks at phone and views notification.
+. App provides user with options (sheltering, escaping, or fighting back).
+. User selects desired option.
+
+*Secondary Scenario*
+
+1. User recieves a notification of a 'virtual enemy attack'.
+.. User does not recieve a notification yet. +
+.. User continues running.
+
+*Success Postcondition:*  User has survived a virtual enemy attack and has either hid, ran faster, or faught the virtual enemy. +
+This scenario is important as it demonstrates one of the goals of the app - making outdoor workouts more entertaining, and tailoring them to user preference. This virtual enemy notification gives users the opportunity to decide where they want their workout to go.
+
+==== (S.4.3) Viewing Exercise History
+*Use Case:* <<uc3>> +
+*Primary Actor:* App user +
+*Precondition:* User has app downloaded. +
+*Trigger:* User wants to view exercise history. +
+*Main Success Scenario*
+
+. User opens app on phone.
+. User opens exercise log on app.
+. User views average heart rate.
+. User views average mile time.
+. User pins metrics on home page.
+
+*Secondary Scenario*
+
+1. User opens app on phone.
+.. User creates new user account.
+.. User logs into already existing account if not already logged in.
+
+[start=3]
+. User views average heart rate.
+.. User has no average heart rate due to lack of data collected.
+. User views average mile time.
+.. User has no average mile time due to lack of data collected.
+. User pins metrics on home page.
+.. User chooses not to pin metrics on home page.
+
+*Success Postcondition:* User now has more information on heart rate, mile time, and has pinned metrics on home page. +
+This scenario is important as it demonstrates the importance of user interaction with their personal data. We can expect some users to have specific goals or concerns. In order to achieve their goals or address their concerns, they must have quick and easy access to personal information.
+
+==== (S.4.4) Check Profile
+*Use Case:* <<uc4>> +
+*Primary Actor:* User +
+*Precondition:*  User has app downloaded. +
+*Trigger:* User wants to check profile. +
+*Main Success Scenario* 
+
+. User opens app on phone.
+. User opens profile on app.
+. User validates/updates personal information.
+. User views badges.
+. User views recommended challenges.
+
+*Secondary Scenario*
+
+1. User opens app on phone.
+.. User creates new user account.
+.. User logs into already existing account if not already logged in.
+
+[start=4]
+. User views badges.
+.. User views no badges (no badges earned yet)
+
+*Success Postcondition:*
+User now has more information on fitness level, app usage, and personal recommendations. +
+This scenario is important as it demonstrates the value of incentivising the app. In order to achieve maximum user engagement, it greatly helps if user have badges to work to and readily access. Also, encouraging users to participate in challenges increases a sense of community and holds users accountable.
+
+==== (S.4.5) Approve Trail
+*Use Case:* <<uc5>> +
+*Primary Actor:* Trail Authorities +
+*Precondition:*  Trail authority creates trail system. +
+*Trigger:* ACME Run wants more trails approved by trail authorities. +
+
+*Main Success Scenario*
+
+. Trail authorities submit trail system for approved use.
+. Trail authorities define name of trail.
+. Trail authorities define geographic area covered by trail.
+. Trail authorities submit rules/regulations/notes for new trail.
+. Trail authority upload documentation to prove authorized trail.
+
+*Secondary Scenario*
+
+. Trail authorities submit trail system for approved use.
+.. Trail authorities deem trail unsafe.
+.. Trail authorities do not submit trail for approved use.
+
+*Success Postcondition:*  ACME Run now has another approved trail. +
+This scenario is important as it demonstrates that the company ACME values user safety. Having this scenario in place ensures that all trails provided to users through the app are safe and validated trails by responsible authorities. 

@@ -1,0 +1,52 @@
+[#p3,reftext=P.3]
+=== (P.3) Schedule and milestones
+
+ifdef::env-draft[]
+TIP: _List of tasks to be carried out and their scheduling. It defines the project's key dates._  <<BM22>>
+endif::[]
+
+**Sprint 1: Week 1-4** 
+
+*Epics*
+
+* Interface
+** Create a basic mobile interface to begin/end a workout, and to interact with the game engine.
+* GPS Tracker
+** This includes the model that tracks a user's run, including pace, distance, route, etc.
+* Game Engine
+** This epic tracks the creation of the game engine, which prompts users to run/fight/hide at random times.
+
+*How does sprint 1 lead to an MVP?* +
+Sprint 1 provides a basic and functional version of ACME Run. Users can now interact with the app through the basic mobile interface. This interface can interact with the game engine, which allows players to use the most fundamental part of the app - the 'start running' feature, which even prompts them for small challenges. This enhances the user experience. The final fundamanetal part of ACME Run is also achieved through sprint 1 - progress tracking. The GPS Tracker provides a simple, but functional version of this, where it allows the app to track a users run, among other data.
+
+**Sprint 2: Week 5-8** 
+
+*Epics*
+
+* User Data
+** Create an interface that allows the user to input information that will be used to optimize their exercises. Including sex,height, weight, and fitness goals.
+* HRM Module
+** Build out a POC integration to track data from an individual HRM model and store the data in a users profile
+* Trail Manager
+** Provide an interface for trail authorities to map out their trail system and submit it for use.
+
+**Sprint 3: Week 9-12** 
+
+*Epics*
+
+* Optimization Engine
+** Build a set of data models that given a users workout history will intelligently and optimally present the user with game engine prompts.
+
+* Auth Module
+** Build out a series of user authentication and authorization pipelines. Including alternate sign-on methods, account recovery, and API access management.
+
+
+**Sprint 4: Week 13-16** 
+
+*Epics*
+
+* Profile and Badges
+** Provide a user profile interface which includes the ability to view and pin badges
+
+* Validation & Verification
+** Conduct a series of unit, integration, and end-to-end tests on the application. 

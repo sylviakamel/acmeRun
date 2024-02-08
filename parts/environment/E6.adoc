@@ -1,0 +1,12 @@
+[#e6,reftext=E.6]
+=== (E.6) Invariants
+
+ifdef::env-draft[]
+TIP: _Properties of the environment that the system's operation must preserve, i.e., properties of the environment that operations of the system may assume to hold when they start, and must maintain_  <<BM22>>
+endif::[]
+
+A list of invariants on this system are as follows: 
+
+* ACME Run will operate in a set of geographical zones. There will always be trails available for users in moderate or clear weather conditions.
+
+* ACME Run can assume that any information pertaining to dangerous trail conditions will be communicated by the city. This includes weather conditions, emergency situations, and road/trail closures.

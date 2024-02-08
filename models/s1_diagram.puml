@@ -1,0 +1,73 @@
+@startuml
+!include ../_style/puml.style
+skinparam ranksep  100
+skinparam nodesep 100
+
+' ***********************
+' * Internal Components *
+' ***********************
+
+
+component profileManager   as "Profile\nManager"
+() "Badges"       as badges
+() "Manage\nPersonal\nInformation" as user_information
+
+user_information -u- profileManager
+badges -r- profileManager
+
+
+component HRMIntegration as "HRM\nIntegration\nLayer"
+
+component workoutManager as "Workout\nManager"
+() "Process\nHRM\nInformation" as process_HRM
+() "Display\nHRM\nInformation" as display_HRM
+
+process_HRM <. workoutManager
+HRMIntegration -r- process_HRM
+display_HRM <.. profileManager
+HRMIntegration -- display_HRM
+
+
+component trailProvider as "Trail\nProvider"
+() "Lookup"       as lookup
+lookup -u- trailProvider
+
+
+component gameEngine as "Game\nEngine"
+() "Activates" as activates
+
+activates -d-workoutManager
+activates .> gameEngine
+
+
+' **************
+' * client app *
+' **************
+
+component mobile as "Client-App"
+() "Edit"       as edit
+() "Process\nUser\nInfo"       as user_info
+mobile -l..>user_info
+user_info -l- workoutManager
+mobile -- edit
+edit ..> profileManager
+mobile -r-lookup
+
+actor "User" as P
+P -d.> mobile
+
+
+' ***********************
+' * External Components *
+' ***********************
+component HRMData as "<<external>> HRM Data"
+() "Access" as access
+HRMData -r- access
+access <. HRMIntegration
+
+component google as "<<external>> Google Maps"
+() "Maps" as maps
+maps -d- google
+maps <.u- trailProvider 
+
+@enduml

@@ -1,0 +1,55 @@
+[#s2,reftext=S.2]
+=== (S.2) Functionality
+
+ifdef::env-draft[]
+TIP: _**This is the bulk of the System book, describing elements of functionality (behaviors)**. This chapter corresponds to the traditional view of requirements as defining "**what the system does**”. It is organized as one section, S.2.n, for each of the components identified in <<s1>>, describing the corresponding behaviors (functional and non-functional properties)._  <<BM22>>
+endif::[]
+
+
+==== (S.2.1) Trail Provider
+===== Functional Requirements
+. [[F211]] **Provide trails:** Trail Manager should provide users with access to the map (interfaced with Google Maps) such that they can choose desired trail to run.
+. **Search through trails:** Trail manager should allow user to search various trails in the map to find a desired one.
+// . **Update trail provider:** Trail manager should provide ACME Run employees with an interface to update, add, and remove trails.
+. [[F212]] **Update trail provider:** Trail manager should provide local trail employees with an interface to update, add, and remove trails.
+. [[F213]] **Select trail:** Trail manager should allow customers to select their desired trail after searching.
+
+===== Non-Functional Requirements
+. [[NF211]] **Accessibility:** Trail manager shall be compatible with accessibility services to ensure inclusivity, including but not limited to visual, auditory, and tactile impairments.
+. [[NF212]] **Scalability:** System should be scalable to accomodate growing numbers of trails or runners using the system at once.
+
+==== (S.2.2) Workout Provider
+===== Functional Requirements
+. [[F221]] **User Data Collection:** The system should collect user data like heart rate, weight, and mile time to understand specific user's needs.
+. [[F222]] **Personalized workouts:** The system should utilize collected user data in order to compile a comprehensive set of workout tailored to the user's needs.
+. [[F223]] **Heart Rate Monitor Integration:** The system should integrate, and collect data from the user's paired HRM to provide the system with more user-specific data.
+. [[F224]] **User Data Storage:** The system should store user data to build a comprehensive dataset of user patterns and tendencies. This will improve workout recommendations.
+
+===== Non-Functional Requirements
+. [[NF221]] **Workout summary:** The system should provide the user with a summary and advantages of the workout to get them excited about completing another outdoor workout.
+. [[NF222]] **Security:** Due to the amount of user data being collected, the system must ensure safe storage and security of said data to avoid data leaks.
+
+==== (S.2.3) Profile Manager
+===== Functional Requirements
+. [[F231]] **Heart Rate Monitor Integration:** Heart rate data should be tracked and displayed for users on their profile page. Including peak, average, and resting heart rates.
+. [[F232]] **Manual Data Input:** Users should be able to manually input heart rate and/or workout data, for those who do not track a workout in the app, or do not have a compatible HRM.
+. [[F233]]  **Badge Generation:** The system should remember user accomplishments and display corresponding badges eared by the user.
+
+===== Non-Functional Requirements
+. [[NF231]] **Personalized Profile:** Profiles should be personalized and unique to individual users to maintain user engagement.
+
+==== (S.2.4) Game Engine
+===== Functional Requirements
+. [[F241]] **User Data Monitoring:** During a workout session, workout data such as HRM and location data shall be actively tracked by the system.
+. [[F242]]**Intelligent Prompting:** Game engine should intelligently analyze user data with scientific algorithms to prompt changes in personalized workout difficulty and levels, and to activate game mechanics including "sheltering", "escaping", and "fighting back."
+
+===== Non-Functional Requirements
+. [[NF241]] **Scalability:** System should be scalable to accomodate growing numbers of users accessing the game mechanics at once. 
+
+==== (S.2.5) HRM Integration Layer
+===== Functional Requirements
+. [[F251]] **Data Transfer:** HRM Integration Layer shall actively pull data from the user's Heart Rate Monitor (HRM) system during a workout session in order to create personalized workouts and display trends on the user's profile.
+
+===== Non-Functional Requirements
+. [[NF251]] **Data Encryption:** HRM Integration Layer shall encrypt data that is sent to other components within the app.
+. [[NF252]] **Personal Data Privacy:** HRM Integration Layer shall ensure that the HRM database is not accessible to others aside from the intended user.  

@@ -1,0 +1,62 @@
+[#s5,reftext=S.5]
+=== (S.5) Prioritization
+
+ifdef::env-draft[]
+TIP: _Classification of the behaviors, interfaces and scenarios (<<s2>>, <<s3>> and <<s4>>) by their degree of criticality. It is useful in particular if during the course of the project various pressures force the team to drop certain functions._  <<BM22>>
+endif::[]
+
+
+=== Priority Table for Trail Provider 
+[cols="2,3,2,3"]
+|===
+
+|Requirement ID | Requirement name | Priority Level | Reasoning 
+
+| <<F211>> | Provide Trails | Must Have | Without this functional requirement, users will not be able to access active trails which workouts are dependent on
+| <<F212>> | Search Through Trails | Must Have | Critical requirement because because if users cannot search through trails, they will not be able to select trails and begin their workout  
+| <<F213>> | Select Trail | Must Have | Critical functionality for the app to be able to start a workout. Without a selected trail, workouts cannot begin.
+| <<NF211>> | Accessibility | Should Have | Helpful for inclusivity to increase the number of users who can access the app
+| <<NF212>> | Scalability | Should Have | Helpful to allowing more users to use the app
+|===
+
+=== Priority Table for Workout Provider
+[cols="2,3,2,3"]
+|===
+|Requirement ID | Requirement Name | Priority Level | Reasoning
+
+|<<F221>> | User Data Collection | Should Have | Collected user data would be used to display user progress. Without it, the app would function, but users would not see history/progress.
+|<<F222>> | Personalized Workouts | Should Have | Collecting user data ensures that provided workouts are tailored to specific users’ needs. Without this, the app would still function, users simply would not have customized workouts.
+|<<F223>> | Heart Rate Monitor Integration | Should Have | If HRM data is not collected, the app would still function, however, users would simply have a less customized workout experience.
+|<<F224>> | User Data Storage | Should Have | Without storing user data, users would still receive workout recommendations, they just would not be personalized.
+|<<NF221>> | Workout Summary | Should Have | This would give users a snapshot of what the workout they are about to do entails. Without this, the app would still function.
+|<<NF222>> | Security | Must Have | Keeping user data safe is priority since we are dealing with users’ personal information.
+|===
+
+=== Priority Table for Profile Manager
+[cols="2,3,2,3"]
+|===
+|Requirement ID | Requirement Name | Priority Level | Reasoning
+
+|<<F231>> | Heart Rate Monitor Integration | Must Have | Crucial for tracking statistics of a workout.
+|<<F232>> | Manual Data Input | Could Have | Helpful for users who have incompatible HRMs or forgot to input an exercise, but not a core competency of the application.
+|<<F233>> | Badge Generation | Could Have | Helpful to increase engagement and return rate, not critical to the application's functionality.
+|<<NF231>> | Personalized Profile | Could Have | Prompts users to come back to the app and recruit other users to join the app. Not critical for functionalty.
+
+|===
+
+=== Priority Table for Game Engine
+[cols="2,3,2,3"]
+|===
+|Requirement ID | Requirement Name | Priority Level | Reasoning
+
+|<<F241>> | User Data Monitoring | Must Have | Critical for giving user insights during their workout.
+|<<F242>> | Intelligent Prompting | Must Have | Ensures that the workout difficulty and intensity is satisfactory.
+|<<NF241>> | Scalability | Must Have | Critical for preventing downtime and data loss.
+
+|===
+
+The prioritization of requirements were based on compliance and core competency. All requirements that affected the security, data collection and data transfer of user information were determined to be high priority requirements (Must Have). In addition, any requirements that affected the core competencies including game mechanisms, selecting trails, and other core functionality required to run the application, were also deemed high priority. All other requirements pertaining to retention and optimization bring great value and enhancement to the project, were ranked medium priority (Should Have). +
+
+Security had a large impact on our requirement prioritization. This is because ACME Run is handling highly personal and sensitive information about individuals who use the app. This information can include weight, age, name, date of birth, heart rate data etc. In the case of a data leak, ACME Run could be held liable for insufficient security measures. Therefore, requirements pertaining to security measures were assigned high priority to ensure the safety of the users' data.
+
+

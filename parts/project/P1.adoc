@@ -1,0 +1,18 @@
+[#p1,reftext=P.1]
+=== (P.1) Roles and personnel
+
+ifdef::env-draft[]
+TIP: _Main responsibilities in the project; required project staff and their needed qualifications. It defines the roles (as a human responsibility) involved in the project._  <<BM22>>
+endif::[]
+
+
+* Product Owner
+** This is the entity ultimately responsible for the upkeep and ownership of ACME Eats. All disputes are ultimately decided by the product owner.
+* Data Security Expert
+** This role is responsible for ensuring that data (both user data and confidential company data) is stored securely.
+* Database Administrator
+** Responsible for DBMS choice, schema optimizations, cloud vs. on-premesis architecture. 
+* Data Scientist
+** This role is be responsible for constructing models for personalized exercise generation. Combining factors such as user demographics, exercise history, HRM data, etc to create an optimized workout strategy.
+* Legal Consultant
+** Responsible for working with local government and trail authorities to ensure compliance with regulations. Creates terms and conditions agreements for end users and other stakeholders.

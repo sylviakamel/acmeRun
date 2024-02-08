@@ -1,0 +1,14 @@
+[discrete]
+=== Control Information
+
+[cols="^1,^2,^1,2,^1,2"]
+|===
+|Section | Version | Lead | Delivered | Reviewer | Approved 
+
+| **<<s1>>** | Milestone #2 | RC | 13-11-2023 | SM | 04-12-2023
+| **<<s2>>** | Milestone #2 | SK | 13-11-2023 | RC | 04-12-2023
+| **<<s3>>** | Milestone #2 | RC | 06-12-2023 | SK | 06-12-2023
+| **<<s4>>** | Milestone #2 | SK | 13-11-2023 | SM | 04-12-2023
+| **<<s5>>** | Final Doc | RC | 13-11-2023 | SM | 04-12-2023
+| **<<s6>>** | Milestone #2 | SM | 13-11-2023 | RC | 04-12-2023
+|===

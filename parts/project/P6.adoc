@@ -1,0 +1,11 @@
+[#p6,reftext=P.6]
+=== (P.6) Risk and mitigation analysis
+
+ifdef::env-draft[]
+TIP: _Potential obstacles to meeting the schedule of <<p4>>, and measures for adapting the plan if they do arise. It is essential to be on the lookout for events that could derail the project, and devise mitigation strategies. It can include a SWOT analysis (Strengths, Weaknesses, Opportunities, Threats) for the project._  <<BM22>>
+endif::[]
+
+
+*Difficulty creating personalized exercises: *Crafting exercises that are personalized to a given user is a core part of our application. However, exercise science is extremely complex, and some users may find that the exercise difficulty and overall composition is unsatisfactory. This can be mitigated by working closely with data science experts to craft robust and tunable models to produce these exercise plans. Furthermore, consulting  with industry professionals to verify and train these models, will help to ensure these exercises are effective. Finally, hand-crafting a set of exercise templates that can be selected by an end user will ensure that there exists atleast one exercise plan that they enjoy.
+
+*Limited trail approval: *The core functionality of the application requires users to run on some sort of trail system. Some private trail systems may be reluctant to approve usage of their trails within the ACME Run application. This will be mitigated by working with the pilot partner, McMaster University, creating curated routes within the campus and its nearby trails. Futhermore this can be mitigated by launching a series of public trail systems which don't require special permission for users to enjoy.

@@ -1,0 +1,104 @@
+[#g7,reftext=G.7]
+=== (G.7) Stakeholders and requirements sources
+
+ifdef::env-draft[]
+TIP: _Groups of people who can affect the project or be affected by it, and other places to consider for information about the project and system. It lists stakeholders and other requirements sources. It should define stakeholders as categories of people, not individuals, even if such individuals are known at the time of writing. The main goal of chapter <<g7>> is to avoid forgetting any category of people whose input is relevant to the project. It also lists documents and other information that the project, aside from soliciting input from stakeholders, can consult for requirements information._  <<BM22>>
+endif::[]
+
+.Stakeholders for {project-title}
+[cols=".^1,2,1,1"]
+|===
+2+| *Stakeholder* | *Persona* | *Category* 
+2+| Fitness Enthusiast | <<Rob>> | Direct
+2+| Local Trail Authorities | <<Monica>> | Direct
+2+| McMaster University | <<Claire>> | Direct
+2+| Local City Authorities | <<Andrew>> | Direct
+2+| Local Businesses | <<Frederick>> | Indirect
+2+| Local Homeowners | <<Sarah>> | Indirect
+
+|===
+
+==== Direct Stakeholders
+===== 1) Fitness Enthusiasts
+
+This group refers to the primary users downloading and using this application. These are folks who are either passionate about fitness or looking for a place to start, looking for an alternative to the gym.
+
+This group is the most transparently relevant to the application, as they are the target audience. Not only do they dictate the vast majority of requirements for the app, they are also the group facing the issues outlined in section (G.2).
+
+[#rob,reftext=Rob]
+*Persona* +
+Rob is a fitness enthusiast with a special interest in running. He is 29 years old and has enjoyed going to the gym for a few years. However as he gets a bit older, the rising cost of gym memberships, as well as the repetitive nature of his workouts has him seeking an alternative. He especially hopes for a solution that lets him get a good workout in without getting in the way of his busy schedule.
+
+*Additional Requirements Sources*
+
+. *User Surveys* Gathering information directly from our target userbase will be a critical way to improve the quality of our user requirements. Not only will this allow us to best understand how we can implement our goals (outlined in G.1), but will also allow us to cater our functionality to solve problems with the user's current workouts (G.2).
+
+//TODO We can have up to 3, so more items here would likely be a good idea
+
+===== 2) Local Trail Authorities
+
+This refers to any staff/security responsible for trails designated in the app. In the case of the McMaster pilot test this will also include McMaster staff. 
+
+As this group is responsible for the maintenance and security of trails, they will have to approve of the usage of their trails/facilities for this application.
+
+[#monica,reftext=Monica]
+*Persona* +
+Monica is a 34 year old working for the trail association in her hometown. She is responsible for ensuring that the trails in her area are kept clean, safe and are maintained well to ensure they can be enjoyed by many. Monica is avid on maintaining a healthy lifestyle, and hopes to find new ways to bring people to the trails she loves.
+
+*Additional Requirements Sources*
+
+. *Trail Rules* Different trails and municipalities have their own unique rulesets. It will be crucial that we do not unintentionally lead a user to violate these rules using the applicaiton.
+. *Legality* Contracts and/or permission between the project team and local authorities which explain responsibilities,as well as helping to ensure compliance with regulations and expectations. 
+
+===== 3) McMaster University
+As the pilot partner in the project hosting the initial app deployment on its campus and surrounding areas, McMaster's collaboration is crucial for testing and launching the app in a controlled environment and for gaining feedback.
+
+The university's participation is important for the project's success, as it serves as the initial testing ground for the app. As such it will be where initial feedback is collected from users, and will also be the primary source for initial users.
+
+[#claire,reftext=Claire]
+*Persona* +
+Claire is a student affairs officer at McMaster, acting as the primary liason for companies looking to integrate with McMaster. She is 32 years old and is an alummi of McMaster, and hopes to find new exciting ways to keep students and staff engaged in the community, and is passionate about fitness.
+
+*Additional Requirements Sources*
+
+. *Campus Rules and Guidelines* In order to have a successful pilot test, it is vital that we comply with any rules, regulations, and expectations set by the university.
+
+. *McMaster Emergency Guidebook* provides the McMaster community with up to date information regarding safety information for a variety of scenarios. As ACME Run is operating on the McMaster campus for their pilot project, it is important for users to be aware of emergency guidelines.
+.. https://security.mcmaster.ca/services/campus-emergency-guide/
+
+===== 3) Local City Authorities
+
+This group refers to the local municipal body which is concerned with public safety. Local city authorities are crucial as they send out important information to citizens ranging from dangerous weather alerts, emergency situations, road closures, community building events etc. ACME Run depends on local city authorities to promptly notify citizens of local events which affect the operations of the app outlined in (G.2).
+
+[#andrew,reftext=Andrew]
+*Persona* +
+Andrew is a city events coordinator for the city of Hamilton. He is 35 years old and is passionate about planning community building events within the city. Recently, he has been planning a promotional campaign called Strive Week which is a week long event promoting healthy active living. He is looking for new events to add to Strive week and for new ways to promote it to the city as well.  
+
+*Additional Requirements Sources*
+
+. *City Event Regulations and Guidelines.* In order to successfully incorporate ACME Run within the city, it is vital to comply with the city's rules, regulations and expectations. 
+
+==== Indirect Stakeholders
+===== 1) Local Businesses
+Any shops/indoor locations that may see an increase in traffic due to the users of the application. This includes those shops near/associated with trails as well as locations that are being used as "shelter" within the application.
+
+This group, though not directly involved in the requirements of the application, is still a key part of the exercise plan outlined in (G.1).
+
+[#frederick,reftext=Frederick]
+*Persona* +
+Frederick is the owner of a coffee store. During the summer months, he often finds that runners stop by at the end of their runs to grab a bite to eat on their way back home. He is excited to see if there is any increase in sales as a result of more people taking up running in the area.
+
+===== 2) Local Homeowners
+
+This group refers to citizens who live in homes near or alongside trails used in ACME Run. 
+
+Local homeowners do not directly interact with ACME Run, but may see an increase in foot traffic and noise near their homes. They are a key part of the plan outlined in (G.2). They can become potential users of the fitness application or may provide further insight on how the application is affecting local neighbourhoods.
+
+[#sarah,reftext=Sarah]
+*Persona* +
+Sarah is a 40 year old stay-at-home mom with two children in elementary school at the Canadian Martyrs Catholic Elementary School near McMaster University. She has recently seen a decline in her son's physical activity levels and is growing concerned as he stays in his room all day playing video games. With the recent increase in pedestrians walking in front of her house to a local trail, Sarah is hoping to look for interactive, feasible solutions to introduce to her son to be more physically active. 
+
+*Additional Requirements Sources*
+
+. *User Surveys* Gathering information directly from our target userbase will be a critical way to improve the quality of our user requirements. Not only will this allow us to best understand how we can implement our goals (outlined in G.1), but will also allow us to cater our functionality to solve problems with the user's current workouts (G.2).
+

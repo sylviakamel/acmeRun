@@ -1,0 +1,29 @@
+[#p4,reftext=P.4]
+=== (P.4) Tasks and deliverables
+
+ifdef::env-draft[]
+TIP: _**This is the core of the Project book**. It details the individual tasks listed under <<p3>> and their expected outcomes. It define the project's main activities and the results they must produce, associated with the milestone dates defined in <<p3>>._  <<BM22>>
+endif::[]
+
+**Sprint Backlog - Stories**
+
+*Note:* Business value will be represented using the MoSCoW scale. This scale ranges from must have, should have, could have, to will not have. +
+
+*Note:* Story points will be represented using the fibonacci sequence. Ranging from 1 (least complex) to 13 (most complex).
+
+. As a fitness enthusiast, I want to easily begin an outdoor workout by choosing a trail from my phone so that I can easily track my outdoor exercise sessions.
+.. Business value (MoSCoW Scale): Must have. This story is a must have because being able to choose a safe trail from a curated set is one of the app's functional requirements - 'Curated Trails'.
+.. Technical Estimate (Story Points): 5 points. As an essential part of the app, This feature should definitely be implemented. However, it is an average complexity task as it does heavily rely on other stories.
+
+. As a fitness enthusiast, I want to have an entertaining running experience so that I can incorporate physical activity in my daily routine in an enjoyable way.
+.. Business value (MoSCoW Scale): Should have. This story is not one of our functional requirements. If left out, ACME Run would still function, however, user's will have a less interactive running experience.
+.. Technical Estimate (Story Points): 5 points. This is an important feature to implement, however, since it may be slightly vague, it is an average complexity task as it would take some effort to decide what exactly would be implemented to achieve this task.
+
+. As a fitness enthusiast, I want to view essential information about my runs, including pace, distance, heart rate, and route so that I can track my performance over time.
+.. Business value (MoSCoW Scale): Should have. This story is a should have because having a personalized user experience requires thorough collection of user data and run history. If not integrated, ACME Run would still be functioning. This covers two of our functional requirements - 'User Profiles' and 'Collected Heart Rate Data'.
+.. Technical Estimate (Story Points): 8 points. This feature requires data collection and integration with the user interface. This would be a moderately high complexity task as it could require GPS tracking system integration as well as HRM integration.
+
+. As a fitness enthusiast, I want to gamify my running experience so that I have incentives/goals to accomplish throughout my run.
+.. Business value (MoSCoW Scale): Must have. This story is a must have because providing users with an interactive, gamified experience is one of our functional reuirements - 'Gamified User Experience'.
+.. Technical Estimate (Story Points): 13 points. This feature is a high complexity feature due to the implementation of game-like elements, real-time prompting, as well as strategic selection of fictional characters based on user progress.
+

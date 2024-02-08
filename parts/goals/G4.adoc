@@ -1,0 +1,22 @@
+[#g4,reftext=G.4]
+=== (G.4) Functionality overview
+
+ifdef::env-draft[]
+TIP: _Overview of the functions (behavior) of the system. Principal properties only (details are in the System book). It is a short overview of the functions of the future system, a kind of capsule version of book S, skipping details but enabling readers to get a quick grasp of what the system will do._  <<BM22>>
+endif::[]
+
+==== Five Functional Requirements:
+
+* *User Profiles*: Players can create profiles that they can access at any moment. These profiles will provide the player with information such as weight, age, and badges. 
+* *Customized Training Plan*: The app provides users with a personalized training plan. Training plans are created with historical user data.
+* *Curated Trails*: The app provides players with a variety of geographical zones to run in. These trails must be curated with local authorities to ensure player safety. 
+* *Collected Heart Rate Data*: The app is able to collect information from a player's compatible Heart Rate Monitor. This information allows the app to adapt the workout to the physical response of the player.
+* *Gamified User Experience*: The app is able to provide users with a gamified workout experience. Users can shelter, hide, and fight back against fictional enemies to progress in their workout.
+
+The two most important functional requirements from the five provided requirements above are *Gamified User Experience* and *Collected Heart Rate Data*. The former is essential to keep users motivated in the duration of a workout. When gamifiying the experience, users will feel compelled to continue using the app to unlock more badges. The latter requirement is integral because it provides users with a fully customized workout experience. Users would get maximum benefit due to their workout plan being tailored for their specific needs and capabilities, thus, keeping them healthy and safe in the long run. 
+
+==== Two Non-Functional Requirements:
+
+* *Compliance with local authorities*: ACME Run must work closely with local authorities to ensure trails are approved for use. Doing so will lower chances of liability where ACME Run is held responsible for any safety or legal violations.
+* *Compliance with Ontario Privacy Data Laws*: Like most apps, ACME Run will handle user data and must do so safely. User information will be collected with the user's permission. Since ACME Run will be handling and collecting user data, it must comply with Ontario’s Data Privacy Laws to ensure safe handling of user information. Doing so will provide users with a sense of safety knowing their data is being handled safely.
+

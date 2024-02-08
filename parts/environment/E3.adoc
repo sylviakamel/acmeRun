@@ -1,0 +1,11 @@
+[#e3,reftext=E.3]
+=== (E.3) Constraints
+
+ifdef::env-draft[]
+TIP: _Obligations and limits imposed on the project and system by the environment. This chapter defines non-negotiable restrictions coming from the environment (business rules, physical laws, engineering decisions), which the development will have to take into account._  <<BM22>>
+endif::[]
+
+- **Interactions with McMaster University:** To operate within McMaster University's campus, ACME Run needs to abide by campus policies and operate within zones approved by the university.
+- **App store support:** The system must comply with mobile store regulations and policies (i.e. Apple store, Android store, etc.)
+- **Mobile OS support** The system must be compatible with iOS 15 onwards, and Android  11 onwards.
+- **HRM support:** The system must be compatible with HRM devices that are still sold by their OEM and continue to recieve software updates from their manufacturer.

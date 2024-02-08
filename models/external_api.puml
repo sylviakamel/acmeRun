@@ -1,0 +1,26 @@
+@startuml
+
+!include ../_style/puml.style
+
+interface Lookup {
+    list(token: Authentication): LookupResponse 
+}
+
+class Authentication <<Security>>
+
+Lookup --> Authentication
+
+class TrailDetails {
+    string: Name 
+    float: duration
+    string: difficulty
+}
+
+Lookup -r..> TrailDetails
+
+class GoogleMaps <<external>>
+
+TrailDetails --> GoogleMaps
+
+
+@enduml

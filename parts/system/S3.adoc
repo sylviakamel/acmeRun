@@ -1,0 +1,25 @@
+[#s3,reftext=S.3]
+=== (S.3) Interfaces
+
+ifdef::env-draft[]
+TIP: _How the system makes the functionality of <<s2>> available to the rest of the world, particularly user interfaces and program interfaces (APIs). It specifies how that functionality will be made available to the rest of the world, including people (users) and other systems. These are interfaces provided by the system to the outside; the other way around, interfaces from other systems, which the system may use, are specified in <<e2>>._  <<BM22>>
+endif::[]
+
+==== (S.3.1) APIs
+The ACME Run system has one API that is made available to the rest of the world: Lookup. This interface is used to integrate the system with Google Maps, which pulls from an external database which allows users to search for available trails near them. 
+
+.External API exposed by {project-title}
+image::models/external_api.svg[scale=70%,align="center"]
+
+- The interface has a single operation given by a list of userVerifications. In order to view active trails, players must have a registered account within ACME Run.
+- The system shall receive an authentication token, which verifies a player is a registered player and grants them access  
+- The system shall answer and give the user access to active trails near them, displaying trail information (i.e. name, duration, difficulty level) which are connected to an external Google Maps interface
+
+==== (S.3.2) Wireframe Mockups
+
+===== (S.3.2.1) Choosing Available Trails (Fitness Enthusiast)
+
+Fitness Enthusiasts need to have quick access to available trails near them. As they launch ACME Run, they will see a list of options to choose from, with the relevant information for each trail. The interface allows users to easily select a trail which will begin their gamified experience. 
+
+.Fitness Enthusiast: Trail select screen 
+image::mockups/s3_wireframe.png[scale=25%,align="center"]

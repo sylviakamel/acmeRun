@@ -1,0 +1,8 @@
+[#g2,reftext=G.2]
+=== (G.2) Current situation
+
+ifdef::env-draft[]
+TIP: _Current state of processes to be addressed by the project and the resulting system. It describes the current situation, upon which the system is expected to improve_  <<BM22>>
+endif::[]
+
+While the conventional gym model has persisted for decades, gym prices have surged, and innovation in the fitness industry has lagged behind the technological advancements in the wider world. Current mobile fitness apps often come up short in functionality, require extensive time to manually input personal data, and are not engaging enough to sustain long term use. Additionally, many fitness applications focus on stationary workouts and require expensive equipment and memberships, mirroring the issues with traditional gyms. However, there's a significant untapped market for an app that empowers users to exercise in the great outdoors with no equipment, optimizing workouts and gamifying the experience. This represents a unique opportunity for an innovative fitness app to meet this demand and offer a refreshing approach to outdoor fitness.

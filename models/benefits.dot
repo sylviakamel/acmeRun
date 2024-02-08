@@ -1,0 +1,48 @@
+digraph GoalModelDiagram {
+    layout="fdp"
+    beautify=true
+  // Player Goals Subgraph
+  subgraph cluster_Player {
+    label="Player";
+    style=dotted;
+    color=blue;
+    // Hard Goals (rounded rectangle)
+    node [shape=box, style=rounded, fontsize=10];
+    UserFitness [label="Achieve Fitness"];
+    UserEngagement [label="Enhance Engagement"];
+    PersonalizedWorkouts [label="Access Personalized Workouts"];
+    CommunityBuilding [label="Build Community through Running"];
+  }
+
+  // Trail Authority Goals Subgraph
+  subgraph cluster_TrailAuthority {
+    label="Trail Authority";
+    style=dotted;
+    color=green;
+    // Resources (rectangle)
+    node [shape=rectangle];
+    RunningTrails [label="Curate Running Trails"];
+    HRMIntegration [label="Integrate HRM Support"];
+    Gamification [label="Enhance Gamification Features"];
+
+    // Plans (rhombus)
+    node [shape=hexagon];
+    DevelopApp [label="Develop and Maintain Application"];
+    CurateTrails [label="Ensure Trail Safety and Variety"];
+    ImplementHRM [label="Integrate HRM Data for Trail Improvement"];
+    GamifyExperience [label="Enhance Gamified Running Experience"];
+  }
+
+  // Dependencies
+  UserFitness -> PersonalizedWorkouts;
+  UserEngagement -> CommunityBuilding;
+  PersonalizedWorkouts -> CurateTrails;
+  PersonalizedWorkouts -> ImplementHRM;
+  CommunityBuilding -> GamifyExperience;
+  DevelopApp -> RunningTrails;
+  DevelopApp -> HRMIntegration;
+  DevelopApp -> Gamification;
+  CurateTrails -> RunningTrails;
+  ImplementHRM -> RunningTrails;
+  GamifyExperience -> RunningTrails;
+}

@@ -1,0 +1,13 @@
+[appendix]
+== Security Considerations
+=== Security by Obscurity Assessment
+
+Security by obscurity refers to securing a system by making its inner workings as opaque as possible. The methods behind implementing this are very broad, and when implemented well can be a powerful tool. ACME Run is responsible for storing and transferring highly sensitive user data at a regular rate, and as such, requires robust security practices. Due to the high efficacy of security by obscurity, it is a powerful approach for this application. However it is important to note that though powerful, security by obscurity is only effective when combined with a set of many other security practices, as obscurity alone is not secure enough for this application.
+
+In the case of ACME Run, security by obscurity (SBO) will be achieved through a range of techniques. The first of which is obfuscation. This includes obfuscating source code to prevent reverse engineering attacks, and ensuring database entities are given unique identifiers to prevent a malicious actor from searching for sensitive data. Additionally, any infrastructure will hide identifiable data, such as OS and/or kernel version, and will also hide port availability. Where possible, default login information and ports will be changed, external software versions will be hidden to prevent the usage of version-specific attacks. 
+
+=== Security Property Assessment
+
+*Confidentiality* is crucial in ensuring user data is not made available to bad actors. Data confidendiality will be enforced using the _Bell-LaPadula_ model. In this case, data will be organized with a strict ownership hierarchy, wherein a certain user "owns" some set of entities, and those entities contain strictly the minimum amount of data required for them, while. This will include stripping data returned by various API calls where it is unnecessary, and, for any given function, only passing and storing data that is strictly necessary. Additionally, requesting entities will only be able to request information that belongs to them in the ownership hierarchy.
+
+*Availability* will be ensured via two methods, attack prevention, and fallback strategies. Attack prevention mostly refers to denial of service attacks, which will be mitigated through network traffic control and firewalls. Fallback strategies cover cases where data is lost or unavailable, both accidentally or as a result of an attack. In both cases, availability will be upkept by ensuring data is replicated in multiple locations, atleast one of which is offsite. The application will also be containerized to allow for the application to remain available even if a single container finds itself offline.

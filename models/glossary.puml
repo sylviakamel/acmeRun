@@ -1,0 +1,54 @@
+@startuml
+!include ../_style/puml.style
+class HeartRateMonitor {
+  -deviceType: String
+  -wornLocation: String
+  +measureHeartRate(): void
+  +determineExerciseIntensity(): void
+  +calculateCaloriesBurned(): void
+}
+
+class McMasterCommunity {
+  -students: List<Student>
+  -staff: List<Staff>
+  -businesses: List<Business>
+  +getStudents(): List<Student>
+  +getStaff(): List<Staff>
+  +getBusinesses(): List<Business>
+}
+
+class TrailAuthorities {
+  -trailRegulations: List<String>
+  +maintainTrail(): void
+  +approveTrailConditions(): void
+}
+
+class VirtualEnemyAttack {
+  -notification: String
+  +run(): void
+  +hide(): void
+  +fight(): void
+}
+
+class Metrics {
+  -healthData: List<Data>
+  +collectData(): void
+  +pinToProfile(): void
+}
+
+class MoSCoWScale {
+  -mustHave: String
+  -shouldHave: String
+  -couldHave: String
+  -willNotHave: String
+  +prioritizeRequirements(): void
+}
+
+class StoryPoints {
+  -points: Integer
+}
+
+MoSCoWScale --|> Metrics
+StoryPoints --|> Metrics
+
+@enduml

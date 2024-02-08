@@ -1,0 +1,29 @@
+[appendix]
+== Feedback Implementation
+
+=== Milestone 1
+* *G1*: Made each sentence more concise, more thoughtfully worded the identity of the application.
+
+* *G2*: Revevaluated the value proposition of the application and how it differs from other applications on the market.
+
+* *G7*: Changed formatting to include table, added additional stakeholders.
+
+* *G3*: Added section.
+
+* *G4*: Fixed formatting and coordinated with changes in G7
+
+* *E1*: Added section.
+
+* *E6*: Reevaluated environment to formualate accurate and reasonable invariants.
+
+=== Milestone 2
+* *G.5:* Fixed spelling errors.
+* *G.6:* Fixed formatting to be more readable. Removed limitation regarding not integrating to social media (Not relevant to project). Improved wording of trail limitation.
+* *E.3:* Fixed constraints based on feedback. Considered OS support and HRMs not supported by their own manufacturers.
+* *E.4:* Created two new assumption
+* *E.2:* Fixed formatting
+* *E.1:* Added glossary
+* *S.1:* Added component to account for actual workout for the gamification and connecting to an HRM device.
+* *S.3:* Added section
+* *S.2:* Added non-functional requirements. Clarified accessibility. Removed ACME Employee who was not mentioned in the document.
+* *S.4:* Fixed formatting. Added activity diagram.

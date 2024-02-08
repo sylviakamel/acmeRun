@@ -1,0 +1,22 @@
+[#p7,reftext=P.7]
+=== (P.7) Requirements process and report
+
+ifdef::env-draft[]
+TIP: _Initially, description of what the requirements process will be; later, report on its steps. It starts out as a plan for conducting the requirements elicitation process, but is meant to be updated as part of that process so that it includes the key lessons of elicitation._  <<BM22>>
+endif::[]
+
+- Fitness Enthusiasts (Rob)
+    * Type of interview: **Closed.** The objective is to identify what drives fitness enthusiasts to choose outdoor workouts over indoor workouts.  
+    * Question: __"When choosing a fitness app to plan workouts, which features do you find most valuable for outdoor workouts that are not typically accessible for home workout plans?"__
+
+- Local Trail Authorities (Monica)
+    * Type of interview: **Open.** We want to understand how ACME Run depends on updates from local trail authorities in order to operate the app safely. 
+    * Question: __"How do you assess and communicate trail accessibility and closure for varying weather conditions?"__ This question helps ensure the integratability and collaboration between ACME Run and local trail authorities. 
+
+- McMaster University (Claire)
+    * Type of interview: **Open.** We want to understand what the fitness scheme looks like at McMaster University for the ACME pilot project, and how it can be incorporated into campus life. 
+    * Question: __"What programs are there currently to support students at McMaster University to live a healthy and active lifestyle? Can you elaborate on what trails and walkways would be suitable to launch this app?"__ This question help us understand how ACME Run differs from pre-existing programs available to students. It will also help gage how ACME Run can positively impact students in a university setting.
+- Local City Authorities (Andrew)
+    * Type of interview: **Open.**  The objective is to understand how local city authorities can collaborate with ACME Run to promote healthy active living.
+    * Question: __"What are the key considerations or challenges one might face when integrating an app such as ACME Run within the city?"__ This question will help us address potential regulatory challenges to consider when deploying ACME Run in a city.
+   

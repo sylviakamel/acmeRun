@@ -1,0 +1,37 @@
+[#e1,reftext=E.1]
+=== (E.1) Glossary
+
+ifdef::env-draft[]
+TIP: _Clear and precise definitions of all the vocabulary specific to the application domain, including technical terms, words from ordinary language used in a special meaning, and acronyms. It introduces the terminology of the project; not just of the environment in the strict sense, but of all its parts._  <<BM22>>
+endif::[]
+
+
+* *Heart Rate Monitor (HRM)* + 
+A device that is normally worn through the means of a watch or external attachement that measures a person's heart rate in real time. Often used to determine exercise intensity and/or calories burned.
+
+* *McMaster Community* + 
+The McMaster community refers to students, and staff of the university, as well as the businesses within the McMaster campus.
+
+* *Trail Authorities* + 
+The regulatory body that is responsible for maintaining trail and approving trail conditions for safety within a designated area.
+
+* *Virtual Enemy Attack* + 
+As a user is running a given trail, the app may notify the user fo a fictional virtual enemy attack. The user can then choose whether to run, hide, or fight.
+
+
+* *Metrics* + 
+The app collects data on user health. This is referred to as metrics. The users can also pin these metrics to their profiles.
+
+* *MoSCoW Scale* + 
+A project management technique used to prioritize project requirements based on how necessary they are to project success. It consists of 4 levels: +
+. Must have: Represents core functionality. Critical to project success. +
+. Should have: Items of high-importance, but not critical to project success. These should be addressed after must haves. +
+. Could have: Items that would be nice to have, but are not necessary to project success. These should be addressed when there is time and extra resources to allocate. +
+. Will not have: Very low-priority items. These items may be out of project scope and like will not be addressed.
+
+* *Story Points (Fibonacci Sequence)* + 
+Story points are a unit of measure used in project management to represent the complexity of implementing a user story. These can be represented in a variety of scales, but in the context of this project, the fibonacci sequence was used - 1, 2, 3, 5, 8, 13. 1 being low complexity, 5 being moderate complexity, and 13 being high complexity.
+
+
+.Domain Model for {project-title}
+image::models/glossary.svg[scale=70%,align="center"]

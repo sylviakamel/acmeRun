@@ -1,0 +1,16 @@
+[#e5,reftext=E.5]
+=== (E.5) Effects
+
+ifdef::env-draft[]
+TIP: _Elements and properties of the environment that the system will affect. It defines effects of the system's operations on properties of the environment. Where the previous two categories (<<e3>>, <<e4>>) defined influences of the environment on the system, effects are influences in the reverse direction._  <<BM22>>
+endif::[]
+
+
+A list of potential effects of the application are as follows:
+
+- *Increase in individual well being and health*. This is possible because the application creates tailored fitness workouts outdoors, promoting healthy active living without the need for extensive gym equipment or a membership. 
+
+- *Increase in usage of public trails*. This is possible because players will follow pre-approved trails by local authorities, increasing the number of individuals using certain paths in the city. 
+
+- *Increase in local business engagement*. This is possible because the application offers the option to "Shelter" at safe zones which include partnering shops, increasing the foot traffic for local businesses.  
+

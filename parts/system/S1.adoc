@@ -1,0 +1,26 @@
+[#s1,reftext=S.1]
+=== (S.1) Components
+
+ifdef::env-draft[]
+TIP: _Overall structure expressed by the list of major software and, if applicable, hardware parts._  <<BM22>>
+endif::[]
+
+The system relies on the following three components: 
+
+- **Trail Provider:** The component in charge of exposing available trails to the users in ACME Run. It allows users to search for trails near them (Lookup) using their location and external mapping tools (Google Maps).
+
+- **Workout Manager:** The component calculating which workouts to display on the application based on HRM data (Process HRM Information) or user information (Process User Information).
+
+- **Profile Manager:** The component in charge of exposing personal information (Manage Personal Information) and achievements (Badges) to the user. Information can be inputted into the app individually, or synced through compatible HRM devices. The profile manager can also display heart monitor data retrieved from the HRM Integration layer (Display HRM Information)
+
+- **Game Engine** This component actively monitors the user's data during a workout. As the workout progresses this component is responsible for intelligently prompting users to run/fight/hide. The game engine is activated when a workout begins (Activates)
+
+- **HRM Integration Layer** This component pulls data from the user's HRM, parses and transfers that data to the Workout Provider, Profile Manager, and Game Engine.
+
+In addition to these components, the system will interact with external components for seamless integration of APIs and software.
+
+Users use ClientApp (a mobile application) to start ACME Run through their smartphone. Location sharing and map data from Google Maps will also be processed to Trail Provider externally.  
+
+.Components involved in {project-title} mobile app
+image::models/s1_diagram.svg[scale=75%,align="center"]
+

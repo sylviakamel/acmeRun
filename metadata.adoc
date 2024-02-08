@@ -1,0 +1,7 @@
+Shaurya Manocha <manocs3@mcmaster.ca>; Rosa Chen <chenr126@mcmaster.ca>; Sylvia Kamel <kamels3@mcmaster.ca>
+:project-title: ACME Run
+:course-number: SE/CS 3RA3
+:course-term: Fall 2023
+:revnumber: 3
+:milestone: 3
+:env-draft:

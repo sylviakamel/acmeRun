@@ -1,0 +1,37 @@
+' @startuml
+
+' !include ../_style/puml.style
+  
+' left to right direction
+
+' actor User as U
+
+
+' rectangle "System" {
+'   U --> (Do Something)
+' }
+' @enduml
+  
+@startuml
+!include ../_style/puml.style
+left to right direction
+
+
+actor "Player" as p
+actor "Trail Authority" as ta
+
+rectangle "System - ACME RUN"{
+  usecase "Start Running" as UC1
+  usecase "Virtual Enemy Attack Notification" as UC11
+  usecase "Approve trail" as UC2
+  usecase "Check profile" as UC3
+  usecase "Exercise history" as UC4
+}
+
+ta --> (UC2)
+UC1 .> UC11 : include
+p --> (UC3)
+p --> (UC4)
+p --> (UC1)
+
+@enduml
